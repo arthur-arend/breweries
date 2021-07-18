@@ -29,27 +29,30 @@ function Detail() {
     history.goBack();
   }
 
-
   return (
-    <> 
+    <div className="main__detail"> 
       <Header />
-      <button onClick={() => handleBack()}>Back</button>
         {detailBrewery ? (
-          <section>
-            <h1>Detalhe do {detailBrewery.name}</h1>
-            <p>Type: {detailBrewery.brewery_type}</p>
-            <p>Street: {detailBrewery.street ? detailBrewery.street : 'NotFound'}</p>
-            <p>City: {detailBrewery.city ? detailBrewery.city : 'NotFound'}</p>
-            <p>State: {detailBrewery.state ? detailBrewery.state : 'NotFound'}</p>
-            <p>Postal code: {detailBrewery.postal_code ? detailBrewery.postal_code : 'NotFound'}</p>
-            <p>Country: {detailBrewery.country ? detailBrewery.country : 'NotFound'}</p>
-            <p>Website: {detailBrewery.website_url ? <a href={detailBrewery.website_url} target="_blank" rel="noreferrer">{detailBrewery.website_url}</a> : 'NotFound'}</p>
-            <p>Phone: {detailBrewery.phone ? detailBrewery.phone : 'NotFound'}</p>
-            <p>Open in maps: {detailBrewery.latitude ? <a href={`https://www.google.com.br/maps/@${detailBrewery.longitude},${detailBrewery.latitude}`} target="_blank" rel="noreferrer">ir pra la</a> : 'NotFound'}</p>
-          </section>
+          <div className="content">
+            <button onClick={() => handleBack()}> Back</button>
+            <section className="section__detail">
+              <div className="section__detail--content">
+                <h1>Detalhe do {detailBrewery.name}</h1>
+                <p>Type: {detailBrewery.brewery_type}</p>
+                <p>Street: {detailBrewery.street ? detailBrewery.street : 'NotFound'}</p>
+                <p>City: {detailBrewery.city ? detailBrewery.city : 'NotFound'}</p>
+                <p>State: {detailBrewery.state ? detailBrewery.state : 'NotFound'}</p>
+                <p>Postal code: {detailBrewery.postal_code ? detailBrewery.postal_code : 'NotFound'}</p>
+                <p>Country: {detailBrewery.country ? detailBrewery.country : 'NotFound'}</p>
+                <p>Website: {detailBrewery.website_url ? <a href={detailBrewery.website_url} target="_blank" rel="noreferrer">{detailBrewery.website_url}</a> : 'NotFound'}</p>
+                <p>Phone: {detailBrewery.phone ? detailBrewery.phone : 'NotFound'}</p>
+                <p>Open in maps: {detailBrewery.latitude ? <a href={`https://www.google.com.br/maps/@${detailBrewery.longitude},${detailBrewery.latitude}`} target="_blank" rel="noreferrer">{detailBrewery.longitude},{detailBrewery.latitude}</a> : 'NotFound'}</p>
+              </div>
+            </section>
+          </div>
         ) : <h1>Loading...</h1>}
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,42 @@
-section {
-    a {
-        cursor: pointer;
+.main__detail {
+    margin: 0 2.5rem 0 2.5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    .content {
+        width: 60%;
+        height: auto;
+        margin: 0 1rem 0 1rem;
+
+        button {
+            background-color: transparent;
+            border-style: none;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+        }
+        .section__detail {
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.34); 
+            box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.34);
+    
+            .section__detail--content {
+                height: auto;
+                padding: 0.5rem 0 2rem 1rem;
+                margin: 0 0 2rem 0;
+                h1{
+                    color: #4a4a4a;
+                }
+                p {
+                    color: #626262;
+                    margin-bottom: 0.4rem;
+                }
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
     }
+    
 }

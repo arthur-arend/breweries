@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Routes from "./routes";
 import { BreweriesProvider } from "./context/breweries";
 
