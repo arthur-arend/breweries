@@ -16,9 +16,10 @@ function Card(brewery) {
   return (
     <article onClick={() => handleClickCard(id)}>
       <h1>{name}</h1>
-
-
-      
+      <p>{street}</p>
+      <p>{city} - {postal_code}</p>
+      <p>{country}</p>
+      <p>{brewery_type}</p>
     </article>
   );
 }
