@@ -14,7 +14,7 @@ function Card(brewery) {
   };
   
   return (
-    <article onClick={() => handleClickCard(id)}>
+    <article onClick={() => handleClickCard(id)} className="article__card">
       <h1>{name}</h1>
       <p>{street}</p>
       <p>{city} - {postal_code}</p>

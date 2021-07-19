@@ -39,14 +39,14 @@ function Detail() {
               <div className="section__detail--content">
                 <h1>{detailBrewery.name}</h1>
                 <p>Type: {detailBrewery.brewery_type}</p>
-                <p>Street: {detailBrewery.street ? detailBrewery.street : 'NotFound'}</p>
-                <p>City: {detailBrewery.city ? detailBrewery.city : 'NotFound'}</p>
-                <p>State: {detailBrewery.state ? detailBrewery.state : 'NotFound'}</p>
-                <p>Postal code: {detailBrewery.postal_code ? detailBrewery.postal_code : 'NotFound'}</p>
-                <p>Country: {detailBrewery.country ? detailBrewery.country : 'NotFound'}</p>
-                <p>Website: {detailBrewery.website_url ? <a href={detailBrewery.website_url} target="_blank" rel="noreferrer">{detailBrewery.website_url}</a> : 'NotFound'}</p>
-                <p>Phone: {detailBrewery.phone ? detailBrewery.phone : 'NotFound'}</p>
-                <p>Open in maps: {detailBrewery.latitude ? <a href={`https://www.google.com.br/maps/@${detailBrewery.longitude},${detailBrewery.latitude}`} target="_blank" rel="noreferrer">{detailBrewery.longitude},{detailBrewery.latitude}</a> : 'NotFound'}</p>
+                <p>Street: {detailBrewery.street ? detailBrewery.street : 'Missing Info'}</p>
+                <p>City: {detailBrewery.city ? detailBrewery.city : 'Missing Info'}</p>
+                <p>State: {detailBrewery.state ? detailBrewery.state : 'Missing Info'}</p>
+                <p>Postal code: {detailBrewery.postal_code ? detailBrewery.postal_code : 'Missing Info'}</p>
+                <p>Country: {detailBrewery.country ? detailBrewery.country : 'Missing Info'}</p>
+                <p>Website: {detailBrewery.website_url ? <a href={detailBrewery.website_url} target="_blank" rel="noreferrer">{detailBrewery.website_url}</a> : 'Missing Info'}</p>
+                <p>Phone: {detailBrewery.phone ? detailBrewery.phone : 'Missing Info'}</p>
+                <p>Open in maps: {detailBrewery.latitude ? <a href={`https://www.google.com.br/maps/@${detailBrewery.longitude},${detailBrewery.latitude}`} target="_blank" rel="noreferrer">{detailBrewery.longitude},{detailBrewery.latitude}</a> : 'Missing Info'}</p>
               </div>
             </section>
           </div>
