@@ -5,7 +5,7 @@ import'./styles.scss';
 function Footer() {
   return (
     <footer>
-      <h3>Breweries List</h3>
+      <p>Breweries List</p>
     </footer>
   );
 }
