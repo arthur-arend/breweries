@@ -5,23 +5,21 @@
     gap: 1rem;
 
     .content_result {
-        width: auto;
+        width: 60%;
         .content_result--select {
             display: flex;
             gap: 1rem;
             margin-bottom: 1rem;
         }
         .content__result--grid {
-            width: 100%;
             display: grid;
-            grid-template-columns: 4fr 4fr 4fr 4fr;
-            grid-gap: 10px;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
     .content__nav {
         button {
             font-size: 1rem;
-            
             padding: 0.5rem 1rem;
             margin: 0 0.5rem;
             background-color: transparent;

@@ -5,6 +5,7 @@ import './styles.scss';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import {ReactComponent as ArrowLeft } from '../../assets/arrowLeft.svg';
 
 import api from '../../services/api';
 
@@ -34,7 +35,7 @@ function Detail() {
       <Header />
         {detailBrewery ? (
           <div className="content__detail">
-            <button onClick={() => handleBack()}> Back</button>
+            <button onClick={() => handleBack()}><ArrowLeft /> Back</button>
             <section className="section__detail">
               <div className="section__detail--content">
                 <h1>{detailBrewery.name}</h1>

@@ -46,14 +46,13 @@ function Home() {
           breweries.map((brewery) => {
             return <Card key={breweries.id} brewery={brewery} />
           })
-        ) : <div />
-      }
+        ) : <h1>Loading...</h1>}
       </div>
     </div>
     <nav className="content__nav">
-      <button type="button" value="1" onClick={(e) => handlePagination(e.target.value)} className={pagination === "1" ? 'content__nav--active' : ''}>1</button>
-      <button type="button" value="2" onClick={(e) => handlePagination(e.target.value)} className={pagination === "2" ? 'content__nav--active' : ''}>2</button>
-      <button type="button" value="3" onClick={(e) => handlePagination(e.target.value)} className={pagination === "3"? 'content__nav--active' : ''}>3</button>
+      <button type="button" onClick={() => handlePagination(1)} className={pagination === 1 ? 'content__nav--active' : ''}>1</button>
+      <button type="button" onClick={() => handlePagination(2)} className={pagination === 2 ? 'content__nav--active' : ''}>2</button>
+      <button type="button" onClick={() => handlePagination(3)} className={pagination === 3 ? 'content__nav--active' : ''}>3</button>
     </nav>
     <Footer />
   </div>

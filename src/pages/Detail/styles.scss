@@ -8,7 +8,17 @@
         height: auto;
         margin: 0 1rem 0 1rem;
 
+        svg {
+            width: 22px;
+            font-size: 1rem;
+            height: auto;
+            color: #4a4a4a;
+        }
         button {
+            display: flex;
+            align-items: flex-end;
+
+            font-size: 1rem;
             background-color: transparent;
             border-style: none;
             cursor: pointer;

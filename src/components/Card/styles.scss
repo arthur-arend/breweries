@@ -1,7 +1,80 @@
 .article__card {
-    width: 280px;
+    width: 90%;
+    
     height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     cursor: pointer;
+    h1 {
+        color: #363636;
+        padding: 0.5rem 1rem;
+    }
+
+    .article__card--p {
+        margin-top: -5rem;
+        padding: 0.5rem 1rem;
+        p {
+            color: #363636;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .article__card--type {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        box-shadow: #939393 0px 0px 1px;
+        span {
+            width: fit-content;
+            color: #ffffff;
+            padding: 0.2rem 1rem;
+            
+            border-radius: 5px;
+            &.micro {
+                
+                background-color: #00d1b1
+            }
+            &.nano {
+                color: #4a4a4a;
+                background-color: #ffdd57;
+            }
+            &.regional{
+                
+                background-color: #3173dc;
+            }
+            &.brewpub{
+                color: #4a4a4a;
+                background-color: #ffdd57;
+            }
+            &.large{
+                
+                background-color: #8f31dc;
+            }
+            &.planning{
+                
+                background-color: #7a20a0;
+            }
+            &.bar{
+                
+                background-color: #ff8b16;
+            }
+            &.contract{
+                
+                background-color: #363636;
+            }
+            &.proprietor{
+                
+                background-color: #229144;
+            }
+            &.closed{
+                
+                background-color: #ff1616;
+            }
+            
+        }
+        
+    }
 }
