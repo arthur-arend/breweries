@@ -1,11 +1,9 @@
 .main__detail {
-    margin: 0 2.5rem 0 2.5rem;
-
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    .content {
+    .content__detail {
         width: 60%;
         height: auto;
         margin: 0 1rem 0 1rem;

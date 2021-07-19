@@ -9,7 +9,7 @@ import Card from '../../components/Card';
 import { useBreweries } from "../../context/breweries";
 
 function Home() {
-  const { breweries, filterBreweries, setFilterBreweries, setPagination } = useBreweries();
+  const { breweries, filterBreweries, setFilterBreweries, pagination, setPagination } = useBreweries();
 
   const handleFilter = (filterValue) => {
     setFilterBreweries(filterValue);
@@ -21,22 +21,26 @@ function Home() {
   }
 
   return( 
-  <>
+  <div className="main__home">
     <Header />
     <div className="content_result">
-      <select value={filterBreweries} onChange={(e) => handleFilter(e.target.value)}>
-        <option value=""></option>
-        <option value="micro">micro</option>
-        <option value="nano">nano</option>
-        <option value="regional">regional</option>
-        <option value="brewpub">brewpub</option>
-        <option value="large">large</option>
-        <option value="planning">planning</option>
-        <option value="bar">bar</option>
-        <option value="contract">contract</option>
-        <option value="proprietor">proprietor</option>
-        <option value="closed">closed</option>
-      </select>
+      <div className="content_result--select">
+        <p>Filter: </p>
+        <select value={filterBreweries} onChange={(e) => handleFilter(e.target.value)}>
+          <option value=""></option>
+          <option value="micro">micro</option>
+          <option value="nano">nano</option>
+          <option value="regional">regional</option>
+          <option value="brewpub">brewpub</option>
+          <option value="large">large</option>
+          <option value="planning">planning</option>
+          <option value="bar">bar</option>
+          <option value="contract">contract</option>
+          <option value="proprietor">proprietor</option>
+          <option value="closed">closed</option>
+        </select>
+      </div>
+      <div className="content__result--grid">
       {
         breweries ? (
           breweries.map((brewery) => {
@@ -44,14 +48,15 @@ function Home() {
           })
         ) : <div />
       }
+      </div>
     </div>
-    <nav>
-      <button type="button" value="1" onClick={(e) => handlePagination(e.target.value)}>1</button>
+    <nav className="content__nav">
+      <button type="button" value="1" onClick={(e) => handlePagination(e.target.value)} style={{}}>1</button>
       <button type="button" value="2" onClick={(e) => handlePagination(e.target.value)}>2</button>
       <button type="button" value="3" onClick={(e) => handlePagination(e.target.value)}>3</button>
     </nav>
     <Footer />
-  </>
+  </div>
   );
 
 }

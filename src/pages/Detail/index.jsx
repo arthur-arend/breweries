@@ -33,11 +33,11 @@ function Detail() {
     <div className="main__detail"> 
       <Header />
         {detailBrewery ? (
-          <div className="content">
+          <div className="content__detail">
             <button onClick={() => handleBack()}> Back</button>
             <section className="section__detail">
               <div className="section__detail--content">
-                <h1>Detalhe do {detailBrewery.name}</h1>
+                <h1>{detailBrewery.name}</h1>
                 <p>Type: {detailBrewery.brewery_type}</p>
                 <p>Street: {detailBrewery.street ? detailBrewery.street : 'NotFound'}</p>
                 <p>City: {detailBrewery.city ? detailBrewery.city : 'NotFound'}</p>
