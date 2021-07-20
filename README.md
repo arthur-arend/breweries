@@ -4,6 +4,8 @@ Baixar o repositório e rodar o comando 'npm install' para instalar as dependên
 
 Rodar o projeto com o comando 'npm start'.
 
+O projeto foi publicado em : (https://breweries-rho.vercel.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
